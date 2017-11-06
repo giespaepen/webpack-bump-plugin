@@ -1,0 +1,23 @@
+{
+  "name": "webpack-bump-plugin",
+  "version": "0.1.0",
+  "description": "Adds a semver compliant build timestamp to your package.json version",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/giespaepen/webpack-bump-plugin.git"
+  },
+  "keywords": [
+    "webpack",
+    "bump"
+  ],
+  "author": "Gie Spaepen <giespaepen@outlook.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/giespaepen/webpack-bump-plugin/issues"
+  },
+  "homepage": "https://github.com/giespaepen/webpack-bump-plugin#readme"
+}
