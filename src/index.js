@@ -1,32 +1,45 @@
+//@flow
+
 const fs = require("fs");
 const path = require("path");
+const constants = require("./constants");
 
-function BumpPlugin(options) {
+function BumpPlugin(options: ?PluginOptions) {
     if (!options) {
-        options = {};
+        options = {
+            target: constants.DefaultTarget,
+            title: constants.DefaultTitle,
+            enabled: constants.DefaultEnabled,
+        };
+    } else {
+        // Autoconfigure options
+        if (!options.target) {
+            options.target = "./package.json";
+        }
+
+        // Autoconfigure enabled
+        if (options.enabled === undefined) {
+            options.enabled = true;
+        }
+
+        // Set the plugin title
+        options.title = "BumpPlugin";
     }
 
-    // Autoconfigure options
-    if (!options.target) {
-        options.target = "./package.json";
-    }
-
-    // Set the plugin title
-    options.title = "BumpPlugin";
 
     this.options = options;
 }
 
 BumpPlugin.prototype.apply = function (compiler) {
-    const options = this.options;
+    const options: PluginOptions = this.options;
 
     if (options.enabled) {
         compiler.plugin("compile", (compilation) => {
-            if (fs.existsSync(options.target)) {
+            if (fs.existsSync((options.target))) {
                 // Parse the target
                 const packageRaw = fs.readFileSync(options.target, "utf8").toString();
-                const package = JSON.parse(packageRaw);
-                const version = package.version;
+                const packageContent = JSON.parse(packageRaw);
+                const version = packageContent.version;
                 const metadataToken = "+";
                 const versionparts = version.split(metadataToken);
 

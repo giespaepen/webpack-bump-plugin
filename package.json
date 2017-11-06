@@ -2,9 +2,10 @@
   "name": "webpack-bump-plugin",
   "version": "0.1.0",
   "description": "Adds a semver compliant build timestamp to your package.json version",
-  "main": "src/index.js",
+  "main": "lib/index.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "build": "babel src/ -d lib"
   },
   "repository": {
     "type": "git",
@@ -19,5 +20,14 @@
   "bugs": {
     "url": "https://github.com/giespaepen/webpack-bump-plugin/issues"
   },
-  "homepage": "https://github.com/giespaepen/webpack-bump-plugin#readme"
+  "homepage": "https://github.com/giespaepen/webpack-bump-plugin#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-flow": "^6.23.0",
+    "babel-register": "^6.26.0",
+    "eslint": "^4.10.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1"
+  }
 }
