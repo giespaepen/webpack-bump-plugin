@@ -1,6 +1,6 @@
 const assert = require('assert')
 const mock = require('mock-fs')
-const process = require('../src/process');
+const process = require('../src/process')
 
 before(() => {
   mock({
