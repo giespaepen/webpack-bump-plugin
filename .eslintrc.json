@@ -2,7 +2,8 @@
   "extends": "standard",
   "parser": "babel-eslint",
   "plugins": [
-    "flowtype"
+    "flowtype",
+    "jest"
   ],
   "rules": {
     "comma-dangle": [
@@ -13,9 +14,10 @@
       "error",
       2
     ],
-    "space-before-function-paren": "off"
-  },
-  "env": {
-    "jasmine": true
+    "space-before-function-paren": "off",
+    "jest/no-disabled-tests": "warn",
+    "jest/no-focused-tests": "error",
+    "jest/no-identical-title": "error",
+    "jest/valid-expect": "error"
   }
 }
