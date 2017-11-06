@@ -1,5 +1,8 @@
+// @flow
+
 module.exports = {
-    DefaultTitle: "BumpPlugin",
-    DefaultTarget: "./package.json",
-    DefaultEnabled: true,
-};
+  defaultEnabled: true,
+  defaultTarget: './package.json',
+  defaultTitle: 'BumpPlugin',
+  metadataToken: '+',
+}

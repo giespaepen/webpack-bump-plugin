@@ -1,10 +1,21 @@
 {
-    "extends": "standard",
-    "plugins": [
-        "standard",
-        "promise"
+  "extends": "standard",
+  "parser": "babel-eslint",
+  "plugins": [
+    "flowtype"
+  ],
+  "rules": {
+    "comma-dangle": [
+      "error",
+      "always-multiline"
     ],
-    "env": {
-        "es6": true
-    }
+    "indent": [
+      "error",
+      2
+    ],
+    "space-before-function-paren": "off"
+  },
+  "env": {
+    "jasmine": true
+  }
 }

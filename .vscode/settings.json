@@ -1,21 +1,24 @@
 // Place your settings in this file to overwrite default and user settings.
 {
-    "files.exclude": {
-        "**/.git": true,
-        "**/.DS_Store": true,
-        "node_modules": true,
-        "coverage": true
-    },
-    "search.exclude": {
-        "**/node_modules": true
-    },
-    "editor.fontFamily": "Fira Code, Menlo, Monaco, 'Courier New', monospace",
-    "editor.fontLigatures": true,
-    "editor.fontSize": 12,
-    "editor.formatOnSave": true,
-    "editor.minimap.enabled": true,
-    "editor.tabCompletion": true,
-    "files.autoSave": "onFocusChange",
-    "javascript.validate.enable": false,
-    "flow.runOnEdit": true
+ "files.exclude": {
+  "**/.git": true,
+  "**/.DS_Store": true,
+  "node_modules": true,
+  "coverage": true
+ },
+ "search.exclude": {
+  "**/node_modules": true
+ },
+ "editor.fontFamily": "Fira Code, Menlo, Monaco, 'Courier New', monospace",
+ "editor.fontLigatures": true,
+ "editor.fontSize": 12,
+ "editor.formatOnSave": true,
+ "editor.minimap.enabled": true,
+ "editor.tabCompletion": true,
+ "files.autoSave": "onFocusChange",
+ "javascript.validate.enable": false,
+ "flow.runOnEdit": true,
+ "editor.tabSize": 2,
+ "editor.insertSpaces": true,
+ "editor.detectIndentation": false
 }

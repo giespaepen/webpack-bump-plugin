@@ -28,6 +28,7 @@ An options object can be provided in the constructor. It contains the following 
 
 - **enabled** (optional, boolean): indicates whether the plugin is enabled, default `true`
 - **target** (optional, string): the path to the package.json file, default `"./package.json"`
+- **verbose** (optional: boolean): indicates whether the plugin logs verbose or not, default `false`
 
 ### Compatability
 

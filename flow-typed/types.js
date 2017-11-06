@@ -1,7 +1,9 @@
 /*eslint-disable*/
-
-declare type PluginOptions = {
-    enabled: boolean;
-    target: string;
-    title: string;
+declare module 'webpack-bump-plugin' {
+    declare type PluginOptions = {
+        enabled: boolean;
+        target: string;
+        title: string;
+        verbose: boolean;
+    }
 }
