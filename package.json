@@ -1,8 +1,11 @@
 {
   "name": "webpack-bump-plugin",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "Adds a semver compliant build timestamp to your package.json version",
   "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
   "scripts": {
     "test": "yarn build && yarn jest",
     "build": "eslint src/** && babel src/ -d lib"
