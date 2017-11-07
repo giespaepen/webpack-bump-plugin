@@ -1,6 +1,6 @@
 {
   "name": "webpack-bump-plugin",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Adds a semver compliant build timestamp to your package.json version",
   "main": "lib/index.js",
   "files": [
@@ -38,10 +38,13 @@
     "eslint-plugin-promise": "^3.6.0",
     "eslint-plugin-standard": "^3.0.1",
     "flow-bin": "^0.58.0",
-    "jest": "^21.2.1"
+    "jest": "^21.2.1",
+    "nyc": "^11.3.0"
   },
   "dependencies": {},
   "jest": {
+    "collectCoverage": true,
+    "coverageDirectory": "coverage",
     "setupFiles": [
       "<rootDir>/test/config/setup.js"
     ]
